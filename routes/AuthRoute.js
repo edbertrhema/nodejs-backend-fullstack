@@ -9,9 +9,9 @@ import { verifyUser } from "../middleware/AuthUser.js";
 
 const router = express.Router();
 
-router.get('/me', verifyUser ,Me);
-router.post('/login', Login);
-router.delete('/logout',verifyUser, logOut);
-router.get('/token', RefreshToken);
+router.get('/api/me', verifyUser ,Me);
+router.post('/api/login', Login);
+router.delete('/api/logout',verifyUser, logOut);
+router.get('/api/token', RefreshToken);
 
 export default router;
